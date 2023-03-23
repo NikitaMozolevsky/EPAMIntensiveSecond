@@ -1,0 +1,13 @@
+2023-03-23 18:51:23 [background-preinit] INFO  hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-03-23 18:51:25 [main] INFO  hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-23 18:51:25 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-23 18:51:25 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-23 18:51:25 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-23 18:51:26 [main] INFO  transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-23 18:52:23 [background-preinit] INFO  hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-03-23 18:52:24 [main] INFO  hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-23 18:52:24 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-03-23 18:52:25 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-23 18:52:25 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-23 18:52:25 [main] INFO  transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-23 18:53:21 [http-nio-8087-exec-2] INFO  com.example.epamintensive2.controller.PersonController - All users
