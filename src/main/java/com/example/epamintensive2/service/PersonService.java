@@ -2,11 +2,15 @@ package com.example.epamintensive2.service;
 
 import com.example.epamintensive2.entity.Person;
 import com.example.epamintensive2.repository.PersonRepository;
-import com.example.epamintensive2.request_response.PersonRequest;
+import com.example.epamintensive2.request_response.PersonResponse;
+import com.example.epamintensive2.request_response.RegisterRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class PersonService {
@@ -19,10 +23,13 @@ public class PersonService {
     }
 
     public List<Person> showAllPersons() {
-        return personRepository.findAll();
+
+        return personRepository.findAll().stream()
+                .sorted((o1, o2) -> o1.getEmail().compareTo(o2.getEmail()))
+                .collect(Collectors.toList());
     }
 
-    public boolean register(PersonRequest request) {
+    public boolean register(RegisterRequest request) {
         //настройка пользователя
         var user = Person.builder()
                 .firstName(request.getFirstName())

@@ -3,6 +3,7 @@ package com.example.epamintensive2.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.Comparator;
 
 @Builder
 @AllArgsConstructor
@@ -34,4 +35,7 @@ public class Person {
     @Column(name = "user_role")
     private Role role;
 
+    public String getFck() {
+        return firstName + " " + lastName + " " + patronymic;
+    }
 }
